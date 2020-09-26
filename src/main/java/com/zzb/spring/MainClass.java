@@ -20,9 +20,9 @@ public class MainClass {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
         context.start();
         //demoTest
-        CustomersService customersService=(CustomersService)context.getBean("customersServiceImpl");
-        Customers customers= customersService.selectByPrimaryKey(10001);
-        logger.info("customers:{}",customers);
+//        CustomersService customersService=(CustomersService)context.getBean("customersServiceImpl");
+//        Customers customers= customersService.selectByPrimaryKey(10001);
+//        logger.info("customers:{}",customers);
         logger.info("applicaion is ok");
         threadHold(context);
         logger.info("application is exit");
